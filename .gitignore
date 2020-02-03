@@ -18,3 +18,5 @@ javanointerface/src/main/java/com/glureau/javanointerface/generated/
 javanointerface/src/test/java/com/glureau/javanointerface/generated/
 javawithinterface/src/test/java/com/glureau/javawithinterface/generated/
 .idea/
+javawithinterface5m/src/main/java/com/glureau/javawithinterface5m/generated/
+javanointerface5m/src/main/java/com/glureau/javanointerface5m/generated/

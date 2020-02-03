@@ -1,6 +1,8 @@
 #!/bin/sh
 source ./java_no_interface.sh
+source ./java_no_interface_5m.sh
 source ./java_with_interface.sh
+source ./java_with_interface_5m.sh
 
 echo ------------------------------- CLEAN FIRST BUILD
 ./gradlew clean compileDebugJavaWithJavac
@@ -12,7 +14,7 @@ done
 
 echo ------------------------------- ITERATIVE BUILD - CHANGE Z - NO INTERFACE
 for attempt in {1..10}; do
-	regenerateLastClassJavaNoInterface "Z7" "Z7-$attempt"
+	regenerateLastClassJavaNoInterface5m "Z7" "Z7-$attempt"
 	time ./gradlew compileDebugJavaWithJavac
 done
 
@@ -23,6 +25,6 @@ done
 
 echo ------------------------------- ITERATIVE BUILD - CHANGE Z - WITH INTERFACE
 for attempt in {1..10}; do
-	regenerateLastClassJavaWithInterface "Z7" "Z7-$attempt"
+	regenerateLastClassJavaWithInterface5m "Z7" "Z7-$attempt"
 	time ./gradlew compileDebugJavaWithJavac
 done

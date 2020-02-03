@@ -1,2 +1,2 @@
-include ':app', ':javanointerface', ':javawithinterface'
+include ':app', ':javanointerface', ':javanointerface5m', ':javawithinterface', ':javawithinterface5m'
 rootProject.name='InterfaceImpactOnBuildTime'
